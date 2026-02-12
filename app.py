@@ -54,12 +54,45 @@
 
 # print(type(mijnMotorenJaartallen)) # datatype controleren met type()
 
-antwoord = input("Hoeveel jaar moet je nog werken? ")
-dagenTotPensioen = int(antwoord)
-if dagenTotPensioen >= 11:
-    print("Je hebt nog geen recht op de WS regeling")
-elif dagenTotPensioen <= 6:
-    print("Je hebt recht op de WS regeling! voor 9% salaris vermidering hoef je maar 4 dagen te werken")
-else:
-    print("Je hebt recht op de WS regeling! maar na 5 jaar krijg je maar 4 dagen uitbetaald...")
+# antwoord = input("Hoeveel jaar moet je nog werken? ")
+# dagenTotPensioen = int(antwoord)
+# if dagenTotPensioen >= 11:
+#     print("Je hebt nog geen recht op de WS regeling")
+# elif dagenTotPensioen <= 6:
+#     print("Je hebt recht op de WS regeling! voor 9% salaris vermidering hoef je maar 4 dagen te werken")
+# else:
+#     print("Je hebt recht op de WS regeling! maar na 5 jaar krijg je maar 4 dagen uitbetaald...")
    
+# nogEenBestelling = input('Wilt U nog een pilsje? (ja/nee) ')
+# while nogEenBestelling == 'ja': # herhaal dit zolang het antwoord 'ja' is
+#     pilsPrijs = 3.5   # Prijs van een pilsje
+#     aantal = input('Hoeveel denkt U er nog te drinken??? ')
+#     aantalPils = int(aantal)
+#     pilsPrijsTotaal = pilsPrijs * aantalPils
+#     print('Dat kost u dan: €', pilsPrijsTotaal)
+#     nogEenBestelling = input('Wilt U nog een pilsje? (ja/nee) ')
+# print('U hebt te veel gedronken, ik bestel wel een taxi voor U')
+
+
+# tafelVan = input('Welke tafel wil je zien (1 t/m 9)? ')
+# tafel = int(tafelVan)
+# tafelEinde = tafel * 10
+
+# n = 0                     # n is de counter (a.k.a. iterator)
+# while n < tafelEinde:       # tafelEinde is het einde van het aantal repeteringen
+#     n = n + tafel
+#     print(n, end=" ")
+
+# for n in range(5):
+#         print("n is", n)
+
+# for i in range(2, 10, 2):
+#     print(i, end=" ") # Output: 2 4 6 8
+
+
+mijnMotoren = ['Triumph', 'BMW', 'Harley']
+for merk in mijnMotoren:
+        print(merk)
+
+for i in range( len(mijnMotoren) ):
+    print(i+1, mijnMotoren[i])
