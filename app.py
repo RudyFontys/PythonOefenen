@@ -90,9 +90,108 @@
 #     print(i, end=" ") # Output: 2 4 6 8
 
 
-mijnMotoren = ['Triumph', 'BMW', 'Harley']
-for merk in mijnMotoren:
-        print(merk)
+# mijnMotoren = ['Triumph', 'BMW', 'Harley']
+# for merk in mijnMotoren:
+#         print(merk)
 
-for i in range( len(mijnMotoren) ):
-    print(i+1, mijnMotoren[i])
+# for i in range( len(mijnMotoren) ):
+#     print(i+1, mijnMotoren[i])
+
+# a = int(input("geef een getal in "))
+# print(a+a)
+
+# print("Sum from 11 to 20 is", sum)
+
+# def sum(i1, i2): # Dit is erg verwarrend... sum() is ook en ingebouwde functie... sum_rang() zou een betere naam zijn
+#         result = 0
+#         for i in range(i1, i2):
+#                 result = result + i
+#         return result
+
+# print("Sum from 11 to 20 is", sum(11, 20))
+# print("Sum from 25 to 32 is", sum(25, 32))
+# print("Sum from 39 to 43 is", sum(39, 43))
+
+# program test_min.py
+
+# 
+# program test_min_with_main_function.py
+
+# def min(num1, num2):
+#         if num1 < num2:
+#                 result = num1
+#         else:
+#                 result = num2
+#         return result
+
+# def test_min_for(n1, n2):
+#         smaller = min(n1, n2) # call min with the values of n1 and n2
+#         print("The smaller number of", n1, "and", n2, "is", smaller)
+#         # return may be omitted here, since no value is returned
+
+# def main():
+#         test_min_for(7, 8)
+#         test_min_for(3.1415, 3.1414)
+#         test_min_for(-1, -2)
+
+# main() # starts executing the statements in main()
+
+# Locale variabele zoals "result" in onderstand voorbeeld is alleen binnen de fuctie geldig... Dus zo oproepen:
+# def faculty(num):
+#         result = 1
+#         for n in range(1, num + 1):
+#                 result = result * n
+#         return result
+
+# num = 4 # num??? moet dit geen number zijn? voorbeeld in redaer is ergens fout
+# fac = faculty(num) # number??? moet dit geen num zijn?
+# print(str(num) + "! =", fac)
+# print(fac)
+
+# void function print_grade only prints score
+
+# def print_grade(score):
+#     if score >= 90.0:
+#         print('A')
+#     elif score >= 80.0:
+#         print('B')
+#     elif score >= 70.0:
+#         print('C')
+#     elif score >= 60.0:
+#         print('D')
+#     else:
+#         print('F')
+
+# def main():
+#     score = float(input("Enter a score: "))
+#     while score >= 0:
+#         print_grade(score)
+#         score = float(input("Enter a score: "))
+
+# main() # Call the main function
+
+# function get_grade returns grade
+# def get_grade(score):
+#     if score >= 90.0:
+#         grade = 'A'
+#     elif score >= 80.0:
+#         grade = 'B'
+#     elif score >= 70.0:
+#         grade = 'C'
+#     elif score >= 60.0:
+#         grade = 'D'
+#     else:
+#         grade = 'F'
+#     return grade
+
+# def main():
+#     score = float(input("Enter a score: "))
+#     while score >= 0:
+#         grade = get_grade(score)
+#         print("The grade is: ", grade)
+#         score = float(input("Enter a score: "))
+
+# main() # Call the main function to start testing
+
+# program circle.py
+
