@@ -195,3 +195,43 @@
 
 # program circle.py
 
+from tkinter import * # imports all tkinter GUI definitions
+
+class LoginWindow():
+    def __init__(self, root):
+        window = root
+        window.title("Black Pearl Login") # "Look": a title to the login window
+
+        self.__login_msg = Label(window) # "Looks": create a label for window
+        # "Looks": set text of the label with .config(text = " . . . ")
+        self.__login_msg.config(text = "enter username/password (top/bottom)")
+        self.__login_msg.pack() # "Looks": # place the label inside the window
+
+        self.__username = Entry(window) # "Looks": create a text entry for window
+        self.__username.config(width = 40) # "Looks": set nr of chars ('width') to 40
+        self.__username.pack() # "Looks": place the entry inside the window
+
+        self.__password = Entry(window) # "Looks": create a text entry for window
+        self.__password.config(width = 40) # "Looks": set nr of chars ('width') to 40
+        self.__password.pack() # "Looks": place the entry inside the window
+
+        button = Button(text = "Login") # "Looks": create a button with text "Login"
+        button.config(command = self.__tryLogin) # "Binding": a click on the button triggers a call: self.tryLogin()
+        button.pack() # "Looks": place the button inside the window
+
+    def __tryLogin(self):
+        # All of the code in this handler function is "Work".
+        # It handles the click on the button by performing all necessary actions.
+        username = self.__username.get() # read username from entry self.__username
+        password = self.__password.get() # read password from entry self.__password
+        if (username == 'Jack Sparrow' and password == 'Captain'):
+            self.__login_msg.config(text = "You may enter the Black Pearl computer!")
+        else:
+            self.__login_msg.config(text = "You didn't say the magic word, savvy?")
+
+def main():
+    root = Tk() # initialise tkinter and create the main GUI window
+    window = LoginWindow(root)
+    root.mainloop() # "Event Loop": window will now wait for user clicks etc.
+
+main()
